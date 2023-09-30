@@ -1,0 +1,88 @@
+{
+    "eventdetails":[
+    {
+        "id":"event2",
+        "id-no":"2",
+        "title":"Brand Activations",
+        "info":"Elevate your brand with our unforgettable 360 photo booth experience! Create lasting impressions and generate a buzz through social media sharing, custom backdrops, and branded overlays. Don't settle for less - make a mark today!"
+    },
+    {
+        "id":"event4",
+        "id-no":"4",
+        "title":"Weddings and Parties",
+        "info":"Distinguish your wedding day with our 360 photo booth rental! Relive the magic in slow motion with props, loved ones, and endless fun. Plus, we'll provide you with all the videos for a lifetime of cherished memories."
+    },
+    {
+        "id":"event3",
+        "id-no":"3",
+        "title":"Corporate Events",
+        "info":"Your employees work hard and they deserve to play hard too! Give your team a guaranteed good time that will capture all the best moments from the event in 360 degree slow-motion. "
+    }, 
+    {
+        "id":"event1",
+        "id-no":"1",
+        "title":"College and School Events",
+        "info":"Elevate your brand with our unforgettable 360 photo booth experience! Create lasting impressions and generate a buzz through social media sharing, custom backdrops, and branded overlays. Don't settle for less - make a mark today!"
+    }
+
+],
+"includedData":[
+    {
+        "id":"1",
+        "title":"Professional Attendants",
+        "icon":"emoji_people",
+        "info":"One thing we never want our customers to do is worry. Every 360 booth rental is staffed with two professional booth attendants to handle setup, operation, interaction and removal.rephrase this"
+    },
+    {
+        "id":"2",
+        "icon":"theater_comedy",
+        "title":"AWESOME PROPS (OPTIONAL)",
+        "info":"We have a massive assortment of prop signs which we curate specifically for each event. If you would like something completely custom (hashtags, big heads, your pets, really the skies the limit), we can design and print something exclusive for you for an additional fee."
+    },
+    {
+        "id":"3",
+        "icon":"video_library",
+        "title":"SLOW MOTION VIDEOS",
+        "info":"Slow it down and capture high-definition, real slow motion videos ready to share and enjoy for years to come. You can even add music if you'd like!"
+    },
+    {
+        "id":"3",
+        "icon":"4k_plus",
+        "title":"HIGH DEFINITION VIDEOS",
+        "info":"Slow it down and capture high-definition, real slow motion videos ready to share and enjoy for years to come. You can even add music if you'd like!"
+    },
+    {
+        "id":"4",
+        "icon":"video_settings",
+        "title":"CUSTOM VIDEO OVERLAY",
+        "info":"Each 360 booth rental package comes with a custom designed media overlay. Choose custom colors, text, graphics, logos, hashtags and more. Our in house design team is more than happy to assist with the curation or we can provide design files if you would like to design your own."
+    },
+    {
+        "id":"5",
+        "icon":"local_shipping",
+        "title":"FREE TRANSPORTATION",
+        "info":"Free Transportation of the product is available for rental in Bangalore."
+    }
+],
+"events":[
+    {
+        "id":"1",
+        "title":"Weddings",
+        "info":"Allow us to take care of your once in a lifetime moment while you enjoy the event like it is meant to be.Allow us to take care of your once in a lifetime moment while you enjoy the event like it is meant to be.Allow us to take care of your once in a lifetime moment while you enjoy the event like it is meant to be.",
+        "videoLink":"https://www.youtube.com/watch?v=-pKGaxoVhok"
+    },
+    {
+        "id":"2",
+        "title":"Bithdays and Parties",
+        "info":"Allow us to take care of your once in a lifetime moment while you enjoy the event like it is meant to be.",
+        "videoLink":"https://www.youtube.com/watch?v=-pKGaxoVhok"
+
+    },
+    {
+        "id":"3",
+        "title":"Corporate Events",
+        "info":"Allow us to take care of your once in a lifetime moment while you enjoy the event like it is meant to be.",
+        "videoLink":"https://www.youtube.com/watch?v=-pKGaxoVhok"
+    } 
+]
+}
