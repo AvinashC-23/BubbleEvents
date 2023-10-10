@@ -1,8 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { useSpring, animated } from 'react-spring';
-import './home.css';
 
-function Home() {
+function ScrollAppear({ children }) {
   const sectionRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -34,20 +33,10 @@ function Home() {
   }, [sectionRef]);
 
   return (
-    <section ref={sectionRef} className='homePage' id='Home'>
-      <div className='introtext'>
-        <animated.h1 style={fadeIn} className='fancy'>
-          EVENT MANAGEMENT <br /> PHOTO BOOTH RENTAL
-        </animated.h1>
-        <animated.p style={fadeIn} className='text'>
-          Provide your guests and visitors with an exceptional and unforgettable experience.
-        </animated.p>
-      </div>
-      <button className='contactUs'>
-        <span className='material-symbols-outlined contactIcon'>call</span>
-      </button>
-    </section>
+    <animated.div ref={sectionRef} style={fadeIn}>
+      {children}
+    </animated.div>
   );
 }
 
-export default Home;
+export default ScrollAppear;

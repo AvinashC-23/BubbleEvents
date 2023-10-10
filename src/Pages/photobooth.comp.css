@@ -1,38 +1,51 @@
 .photobooths{
     width:100%;
     height:100%;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    background: rgb(8,28,154);
+    background: linear-gradient(103deg, rgba(8,28,154,0.1153054971988795) 15%, rgba(195,105,225,0.1012998949579832) 70%);
     color: white;
     padding: 10px;
     padding-top: 30px;
 
 }
 .heading360{
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     margin-bottom: 20px;
-    font-size: 3rem;
+    font-size: 2rem;
+    @supports (background-clip: text) or (-webkit-background-clip: text) {
+        background-image: url("grad.png");
+        background-size: 110% auto;
+        background-position: center;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
+    font-weight: 300;
 }
 .photoBoothContainer{
-    width: 350px;
+    width: 380px;
     height:400px;
     display: flex;
-    border: 1px solid rgba(255, 255, 255, 0.413);
     text-align: center;
     justify-content: center;
-    margin: 0 30px 30px 30px;
-    padding: 15px;
+    margin: 0 10px 30px 10px;
+    padding: 2px;
     align-items: center;
-    background-color: rgb(7, 3, 3);
-    /* box-shadow: rgba(246, 226, 207, 0.591) 0px 3px 8px; */
-    /* box-shadow: rgba(252, 251, 251, 0.537) 1.95px 1.95px 2.6px; */
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0);
 }
 .innerContainer{
     width: 99%;
     height: 99%;
-    border: 1px solid rgba(255, 255, 255, 0.35);
     padding: 20px;
-    background-color: rgb(23, 22, 22);
+    border-radius: 10px;
+    color: rgb(5, 5, 5);
+    border-bottom: 1px solid #7f69e14f ;
+    border-right: 1px solid #8569e14f;
+    background-image: linear-gradient(rgba(61, 123, 189, 0.5), rgba(131, 125, 125, 0.5)), url("https://wallpapercave.com/wp/wp8520270.jpg");
+    background-size: cover;
 }
 .splide__slide {
     display: flex;
@@ -40,7 +53,16 @@
     text-align: center;
 }
 .photoBoothHeading{
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    @supports (background-clip: text) or (-webkit-background-clip: text) {
+        background-image: url("grad.png");
+        background-size: 110% auto;
+        background-position: center;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
 }
 .photBoothTextDiv{
     margin-top: 20px;
@@ -50,13 +72,14 @@
     padding-top:40px !important ;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem !important;
+    color: white;
 }
 .ppagi{
     margin-top: 200px;
 }
 .included{
     text-align: center;
-    padding: 50px;
+    padding: 30px;
     box-sizing: border-box;
     width: 100%;
     margin: 0%;
@@ -71,57 +94,110 @@
     justify-content: center;
 }
 .eventContainer{
-    border: 1px solid rgba(255, 255, 255, 0.234) ;
     border-radius: 5px;
     padding: 10px;
     margin-top: 2%;
     margin-bottom: 10px;
     width:300px;
-    height: 250px;
-    box-shadow: rgba(53, 52, 52, 0.45) 0px 25px 20px -20px;
+    height: 320px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    color: black;
 }
 .material-symbols-outlined{
     font-size: 2rem;
 }
-.eventContainer h1{
-    font-family: 'Bebas Neue', sans-serif;
-    margin-bottom: 5px;
-}
 .eventTitle{
     margin: 0%;
     padding: 0%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    margin-bottom: 5px;
 }
-@media screen and (min-width:720px){
+.eventTitleHovered{
+    @supports (background-clip: text) or (-webkit-background-clip: text) {
+        background-image: url("grad.png");
+        background-size: 110% auto;
+        background-position: center;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0);
+}
+.eventData{
+    font-family: 'Titillium Web', sans-serif;
+}
+.titleLine{
+    height:40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (min-width:750px){
+    .includedWindows{
+        display: none;
+    }
+    .includedPhone{
+        display: none;
+    }
     .eventContainer{
         margin-left: 20px;
         margin-right: 20px;
     }
 }
-@media screen and (min-width:1480px){
+@media screen and (min-width:1180px){
     .included{
-        padding-left: 20%;
-        padding-right: 20%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .includedWindows{
+        display: block;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .includedPhone{
+        display: none;
+    }
+    .includedTablet{
+        display: none;
     }
 
 }
-@media screen and (max-width:750px) {
+@media screen and (min-width:600px) and (max-width:750px) {
     .photoBoothText{
         font-size: 1.1rem !important;
     }
     .photoBoothsMobile{
         display: block;
     }
-    .photoBoothsTablet{
+    .photoBoothsTablet , .includedTablet, .photoBoothsWindow , .includedWindows{
         display: none;
     }
-    .photoBoothsWindow{
-        display: none;
+    .splide__pagination--ltr
+    {
+        position:absolute;
+        top:260px;
+        /* bottom: 100px; */
+        /* margin-top: 20px; */
     }
 }
 @media screen and (max-width:600px){
     .heading360{
         font-size: 1.8rem;
     }
+    .photoBoothsTablet,.photoBoothsWindow , .includedTablet ,.includedWindows{
+        display: none;
+    }
+    .splide__pagination--ltr{
+        margin-top: 40px;
+    }
+    
 }
 @media screen and (max-width:1135px) and (min-width:750px){
     .photoBoothsMobile{
@@ -132,6 +208,14 @@
     }
     .photoBoothsTablet{
         display: block;
+    }
+    .eventContainer{
+        height: 350px;
+        width:280px
+    }
+    .splide__pagination{
+        position: absolute;
+        bottom:20px
     }
 }
 @media screen and (min-width:1135px) {
@@ -144,5 +228,20 @@
     .photoBoothsWindow{
         display: block;
     }
+    .carrouselWindow{
+         padding-left: 100px;
+        padding-right: 100px;
+    }
+    .splide__arrows--ltr{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
     
+}
+@media screen and (min-width:1600px){
+    .includedWindows{
+        padding-left: 250px;
+        padding-right: 250px;
+    }
 }
