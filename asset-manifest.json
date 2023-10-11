@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/bubbleevents/static/css/main.4e15a871.css",
-    "main.js": "/bubbleevents/static/js/main.beb375fb.js",
+    "main.css": "/bubbleevents/static/css/main.9c676bee.css",
+    "main.js": "/bubbleevents/static/js/main.22d533e3.js",
     "static/js/787.6059ec25.chunk.js": "/bubbleevents/static/js/787.6059ec25.chunk.js",
     "static/media/grad.png": "/bubbleevents/static/media/grad.741ae4168bd7edd7b086.png",
     "static/media/logo1.jpeg": "/bubbleevents/static/media/logo1.53c04e978b3b8a797c06.jpeg",
     "index.html": "/bubbleevents/index.html",
-    "main.4e15a871.css.map": "/bubbleevents/static/css/main.4e15a871.css.map",
-    "main.beb375fb.js.map": "/bubbleevents/static/js/main.beb375fb.js.map",
+    "main.9c676bee.css.map": "/bubbleevents/static/css/main.9c676bee.css.map",
+    "main.22d533e3.js.map": "/bubbleevents/static/js/main.22d533e3.js.map",
     "787.6059ec25.chunk.js.map": "/bubbleevents/static/js/787.6059ec25.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e15a871.css",
-    "static/js/main.beb375fb.js"
+    "static/css/main.9c676bee.css",
+    "static/js/main.22d533e3.js"
   ]
 }
