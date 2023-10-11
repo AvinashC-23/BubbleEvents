@@ -65,7 +65,16 @@ function Navbar() {
         </div>
         
         <div className='smaller-screen'>
-            <i className={isMenuOpen? "fa-solid fa-circle-xmark menu-icon": "fa-solid fa-bars menu-icon" }onClick={()=>{setIsMenuOpen(!isMenuOpen)}}></i>
+            {/* <i className={isMenuOpen? "fa-solid fa-circle-xmark menu-icon": "fa-solid fa-bars menu-icon" }onClick={()=>{setIsMenuOpen(!isMenuOpen)}}></i> */}
+            {isMenuOpen ? (
+            <span class="material-symbols-outlined menu-icon" onClick={() => {setIsMenuOpen(false)}}>
+            close
+            </span>
+            ) : (
+            <span class="material-symbols-outlined menu-icon" onClick={() => {setIsMenuOpen(true)}}>
+            menu
+            </span>
+            )}
         </div>
         </Router>
     </div>

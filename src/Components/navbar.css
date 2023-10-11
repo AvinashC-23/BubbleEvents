@@ -96,18 +96,18 @@
       }
     font-size: 1.4rem;
 }
-@media screen and (max-width:600px){
+/* @media screen and (max-width:600px){
     .logo {
         align-items: center;
         font-family: 'Bebas Neue', sans-serif;
-        /* font-size: 20px; */
-        /* font-size: 1.3rem; */
+
+
         height: 80px;
         padding-top:20px;
         text-decoration: none;
         margin-left: 80px;
         margin-top: -50px;
-        /* background-color: #189AB4; */
+
         @supports (background-clip: text) or (-webkit-background-clip: text) {
             background-image: url("grad.png");
             background-size: 110% auto;
@@ -120,16 +120,16 @@
     .logo h1{
         font-size: 1.8rem;
         margin-top: 10px;
-        /* height: 100%; */
+
     }
     .navigation-bar{
         height: 55px;
-        /* background-color: #189AB4; */
+
     }
     .navigation-bar-white{
         height: 50px;
     }
-}
+} */
 @media screen and (max-width:1135px){
     .logo{
         font-size: 1.2rem;
