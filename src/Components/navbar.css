@@ -1,37 +1,3 @@
-/* .navigation-bar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(18, 18, 18);
-    position: fixed;
-    width:100%;
-}
-.logo{
-    padding-left: 20px;
-    color:rgb(255, 153, 0);
-}
-.navlist{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    padding-right: 30px;
-}
-.NavLink{
-    padding: 0px 10px 0px 20px;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
-    color:white ;
-    font-weight: 400;
-}
-.NavLink:hover{
-    color: rgb(255, 153, 0);
-    transition: 0.5s ease-in-out;
-
-}
-.NavigationOpem{
-    padding-right: 20px;
-} */
 .logo{
 
     font-family: 'Bebas Neue', sans-serif;
@@ -42,6 +8,7 @@
     text-decoration: none;
     margin-left: 80px;
     margin-top: -30px;
+    background-color: #189AB4;
     @supports (background-clip: text) or (-webkit-background-clip: text) {
         background-image: url("grad.png");
         background-size: 110% auto;
@@ -129,7 +96,40 @@
       }
     font-size: 1.4rem;
 }
-
+@media screen and (max-width:600px){
+    .logo {
+        align-items: center;
+        font-family: 'Bebas Neue', sans-serif;
+        /* font-size: 20px; */
+        /* font-size: 1.3rem; */
+        height: 80px;
+        padding-top:20px;
+        text-decoration: none;
+        margin-left: 80px;
+        margin-top: -50px;
+        background-color: #189AB4;
+        @supports (background-clip: text) or (-webkit-background-clip: text) {
+            background-image: url("grad.png");
+            background-size: 110% auto;
+            background-position: center;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+          }
+    }
+    .logo h1{
+        font-size: 1.8rem;
+        margin-top: 10px;
+        /* height: 100%; */
+    }
+    .navigation-bar{
+        height: 55px;
+        /* background-color: #189AB4; */
+    }
+    .navigation-bar-white{
+        height: 50px;
+    }
+}
 @media screen and (max-width:1135px){
     .logo{
         font-size: 1.2rem;

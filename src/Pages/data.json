@@ -4,24 +4,28 @@
         "id":"event2",
         "id-no":"2",
         "title":"Brand Activations",
+        "backgroundUrl":"https://keopix.com/wp-content/uploads/2019/02/360-Orbit-Gallery-2.jpg",
         "info":"Elevate your brand with our unforgettable 360 photo booth experience! Create lasting impressions and generate a buzz through social media sharing, custom backdrops, filters,  and branded overlays. Don't settle for less - make a mark today!"
     },
     {
         "id":"event4",
         "id-no":"4",
         "title":"Weddings and Parties",
+        "backgroundUrl":"https://i.pinimg.com/736x/78/3b/15/783b157d46db03342bd0f7915c985447.jpg",
         "info":"Distinguish your wedding day with our 360 photo booth rental! Relive the magic in slow motion with props, loved ones, and endless fun. We'll provide you with all the videos for a lifetime of cherished memories."
     },
     {
         "id":"event3",
         "id-no":"3",
         "title":"Corporate Events",
+        "backgroundUrl":"https://magicsmilesphotobooth.com/wp-content/uploads/2021/06/istockphoto-1183414292-612x612-1-500x383.jpg",
         "info":"Your employees work hard and they deserve to play hard too! Give your team a guaranteed good time that will capture all the best moments from the event in 360 degree slow-motion. "
     }, 
     {
         "id":"event1",
         "id-no":"1",
         "title":"College and School Events",
+        "backgroundUrl":"https://magicmomentphotobooth.com/wp-content/uploads/2019/10/IMG_0094.jpg",
         "info":"Bring an extra dose of excitement to your college events with our 360 photo booth! Capture the joy of every event from orientation days to alumni reunion in 360-degree slow motion. Create a buzz on social media and let the world see the vibrant life on your campus!"
     }
 

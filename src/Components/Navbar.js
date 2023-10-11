@@ -52,7 +52,7 @@ function Navbar() {
                 </Link>
             </li>
             <li>
-                <Link to="/pricing" smooth={true} className='navigation-link' onClick={()=>{setIsMenuOpen(!isMenuOpen)}}>
+                <Link to="#pricing" smooth={true} className='navigation-link' onClick={()=>{setIsMenuOpen(!isMenuOpen)}}>
                     Pricing
                 </Link>
             </li>
@@ -65,8 +65,7 @@ function Navbar() {
         </div>
         
         <div className='smaller-screen'>
-            <i className={isMenuOpen? "fa-solid fa-circle-xmark menu-icon": "fa-solid fa-bars menu-icon" }onClick={()=>{setIsMenuOpen(!isMenuOpen)
-            console.log(isMenuOpen)}}></i>
+            <i className={isMenuOpen? "fa-solid fa-circle-xmark menu-icon": "fa-solid fa-bars menu-icon" }onClick={()=>{setIsMenuOpen(!isMenuOpen)}}></i>
         </div>
         </Router>
     </div>

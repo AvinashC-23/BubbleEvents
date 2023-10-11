@@ -60,12 +60,8 @@ function Events() {
                         </div>
                         <div className='line'></div>
                         <div className='media'>
-                          {/* <iframe className='video'
-                            src="https://www.youtube.com/embed/C0DPdy98e4c"
-                            frameborder="0"
-                            allow="autoplay; encrypted-media"
-                            allowfullscreen
-                            title="video"/> */}
+                          <img src={event.image} alt="Loading.....">
+                          </img>
                         </div>
                       </animated.div>
 
