@@ -191,6 +191,7 @@
     }
 
 }
+
 @media screen and (min-width:600px) and (max-width:750px) {
     .photoBoothText{
         font-size: 1.1rem !important;
@@ -208,6 +209,7 @@
         /* bottom: 100px; */
         /* margin-top: 20px; */
     }
+   
 }
 @media screen and (max-width:600px){
     .heading360{
@@ -267,6 +269,9 @@
     .splide__pagination{
         position: absolute;
         bottom:20px
+    }
+    .eventInfo{
+        height: 200px;
     }
 }
 @media screen and (min-width:1135px) {
