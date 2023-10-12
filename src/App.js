@@ -14,10 +14,8 @@ function App() {
         <Events/>
         <Photobooths/>
         <Pricing/>
-        {/* <Footer/> */}
+        <Footer/>
       </div>
-      
-
   );
 }
 

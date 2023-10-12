@@ -42,8 +42,8 @@ function Photobooths() {
         }}extensions={{ AutoScroll }}>
         {boothevent.map((item, index) => (
               <SplideSlide key={item.id}>
-                  <div className='photoBoothContainer'>
-                    <div className='innerContainer' style={{ backgroundImage: `linear-gradient(33deg, rgba(90,90,92,0.5438769257703081) 0%, rgba(25,24,24,0.6083026960784313) 100%), url(${item.backgroundUrl})` }}>
+                  <div className='photoBoothContainer' style={{ backgroundImage: `linear-gradient(33deg, rgba(90,90,92,0.5438769257703081) 0%, rgba(25,24,24,0.6083026960784313) 100%), url(${item.backgroundUrl})` }}>
+                    <div className='innerContainer'>
                     <h1 className='photoBoothHeading'>{item.title}</h1>
                     <div className='photBoothTextDiv'>
                       <span className='photoBoothText'>{item.info}</span>
@@ -72,8 +72,8 @@ function Photobooths() {
         }}>
         {boothevent.map((item, index) => (
               <SplideSlide key={item.id}>
-                  <div className='photoBoothContainer'>
-                    <div className='innerContainer' style={{ backgroundImage: `linear-gradient(33deg, rgba(90,90,92,0.5438769257703081) 0%, rgba(25,24,24,0.6083026960784313) 100%), url(${item.backgroundUrl})` }}>
+                  <div className='photoBoothContainer' style={{ backgroundImage: `linear-gradient(33deg, rgba(90,90,92,0.5438769257703081) 0%, rgba(25,24,24,0.6083026960784313) 100%), url(${item.backgroundUrl})` }}>
+                    <div className='innerContainer'>
                     <h1 className='photoBoothHeading'>{item.title}</h1>
                     <div className='photBoothTextDiv'>
                       <span className='photoBoothText'>{item.info}</span>
@@ -104,8 +104,8 @@ function Photobooths() {
 
         {boothevent.map((item, index) => (
               <SplideSlide key={item.id}>
-                  <div className='photoBoothContainer'>
-                    <div className='innerContainer' style={{ backgroundImage: `linear-gradient(33deg, rgba(90,90,92,0.5438769257703081) 0%, rgba(25,24,24,0.6083026960784313) 100%), url(${item.backgroundUrl})` }}>
+                  <div className='photoBoothContainer' style={{ backgroundImage: `linear-gradient(33deg, rgba(90,90,92,0.5438769257703081) 0%, rgba(25,24,24,0.6083026960784313) 100%), url(${item.backgroundUrl})` }}>
+                    <div className='innerContainer'>
                     <h1 className='photoBoothHeading'>{item.title}</h1>
                     <div className='photBoothTextDiv'>
                       <span className='photoBoothText'>{item.info}</span>
@@ -139,6 +139,7 @@ function Photobooths() {
             onMouseEnter={() => handleHover(index)}
             onMouseLeave={handleLeave}
           >
+            <div className='inEventContainer'>
             <div className='titleLine'>
             <span class="material-symbols-outlined ">
               {item.icon}
@@ -148,6 +149,8 @@ function Photobooths() {
             </h1>
             </div>            
             <p className='eventData'>{item.info}</p>
+            </div>
+            
         </div>
         </SplideSlide>
       ))}
@@ -171,6 +174,7 @@ function Photobooths() {
             onMouseEnter={() => handleHover(index)}
             onMouseLeave={handleLeave}
           >
+            <div className='inEventContainer'>
             <div className='titleLine'>
             <span class="material-symbols-outlined ">
               {item.icon}
@@ -180,7 +184,7 @@ function Photobooths() {
             </h1>
             </div>            
             <p className='eventData'>{item.info}</p>
-        </div>
+        </div></div>
         </SplideSlide>
       ))}
         </Splide>
@@ -195,7 +199,7 @@ function Photobooths() {
             className="eventContainer"
             onMouseEnter={() => handleHover(index)}
             onMouseLeave={handleLeave}
-          >
+          > <div className='inEventContainer'>
             <div className='titleLine'>
             <span class="material-symbols-outlined ">
               {item.icon}
@@ -205,7 +209,7 @@ function Photobooths() {
             </h1>
             </div>            
             <p className='eventData'>{item.info}</p>
-        </div>
+        </div></div>
         </li>
       ))}
         </ul>

@@ -57,7 +57,7 @@ function Navbar() {
                 </Link>
             </li>
             <li>
-                <Link to="/contact-us" smooth={true} className='navigation-link' onClick={()=>{setIsMenuOpen(!isMenuOpen)}}>
+                <Link to="#contact-us" smooth={true} className='navigation-link' onClick={()=>{setIsMenuOpen(!isMenuOpen)}}>
                      Contact-Us
                 </Link>
             </li>
