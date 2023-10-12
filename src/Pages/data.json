@@ -72,21 +72,23 @@
     {
         "id":"event.1",
         "title":"Weddings",
-        "info":"Allow us to take care of your once in a lifetime moment while you enjoy the event like it is meant to be.Allow us to take care of your once in a lifetime moment while you enjoy the event like it is meant to be.Allow us to take care of your once in a lifetime moment while you enjoy the event like it is meant to be.",
-        "videoLink":"https://www.youtube.com/watch?v=-pKGaxoVhok"
+        "info":"Savor your once-in-a-lifetime moment with Bubble Events. Trust us to meticulously craft your perfect wedding while you cherish every precious detail, allowing you to fully immerse yourself in the joyous celebration.",
+        "videoLink":"https://www.youtube.com/watch?v=-pKGaxoVhok",
+        "image":"https://apis.xogrp.com/media-api/images/72241d24-e14d-4cca-98a6-9af1d06b95cf"
     },
     {
         "id":"event.2",
         "title":"Bithdays and Parties",
-        "info":"Allow us to take care of your once in a lifetime moment while you enjoy the event like it is meant to be.",
-        "videoLink":"https://www.youtube.com/watch?v=-pKGaxoVhok"
-
+        "info":"From milestone birthdays to your wildest parties, let us handle the details. At Bubble Events, we specialize in creating unforgettable moments, ensuring your celebration is a resounding success. Relax and enjoy, we've got your back!",
+        "videoLink":"https://www.youtube.com/watch?v=-pKGaxoVhok",
+        "image":"https://i.ytimg.com/vi/lNsjpah1v7A/maxresdefault.jpg"
     },
     {
         "id":"event.3",
         "title":"Corporate Events",
-        "info":"Allow us to take care of your once in a lifetime moment while you enjoy the event like it is meant to be.",
-        "videoLink":"https://www.youtube.com/watch?v=-pKGaxoVhok"
+        "info":"Elevate your corporate event with Bubble Events. Our expert team ensures seamless planning and execution, leaving you free to focus on your business goals. Innovative concepts, creative designs, flawless execution - all in one package.",
+        "videoLink":"https://www.youtube.com/watch?v=-pKGaxoVhok",
+        "image":"https://www.professionalvideo.in/wp-content/uploads/2019/08/event-photographer.jpg"
     } 
 ]
 }

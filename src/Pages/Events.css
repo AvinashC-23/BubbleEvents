@@ -36,16 +36,26 @@
 }
 .title{
     margin-top: 45px;
-    background-color: rgb(255, 255, 255);
-    color: black;
-
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.6rem;
+    font-size: 2.5rem;
+    padding:0;
+    text-decoration: none;
+    margin-bottom: 2%;
+    @supports (background-clip: text) or (-webkit-background-clip: text) {
+        background-image: url("grad.png");
+        background-size: 110% auto;
+        background-position: center;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
+
 }
 .eventText{
     width: 80%;
-    text-align: center;
+    text-align: justify;
     margin-left: 10%;
+    font-size: 20px
 }
 .line{
     background-color: black;
@@ -55,8 +65,8 @@
     margin-right: 20px;
 }
 .media{
-    width:400px;
-    height:200px;
+    width:450px;
+    height:300px;
     border-radius: 2%;
 }
 .video{
@@ -154,5 +164,10 @@
     .splide__pagination--ltr{
         margin-top: -100px !important;
         background-color: black;
+    }
+}
+@media screen and (max-width:600px) {
+    .eventInfo{
+        height: 230px;
     }
 }

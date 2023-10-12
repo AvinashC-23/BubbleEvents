@@ -59,9 +59,9 @@ function Events() {
                           <p className='eventText'>{event.info}</p>
                         </div>
                         <div className='line'></div>
-                        <div className='media'>
-                          <img src={event.image} alt="Loading.....">
-                          </img>
+                        <div className='media' style={{ background: `url(${event.image})`,backgroundSize: 'cover'}}>
+                          {/* <img className="media" src={event.image} alt="Loading....."> */}
+                        {/* </img> */}
                         </div>
                       </animated.div>
 
