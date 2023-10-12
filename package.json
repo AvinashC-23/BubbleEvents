@@ -2,7 +2,7 @@
   "homepage": "https://AvinashC-23.github.io/BubbleEvents",
   "name": "bubble",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "dependencies": {
     "@ionic/react": "^7.4.2",
     "@splidejs/react-splide": "^0.7.12",
