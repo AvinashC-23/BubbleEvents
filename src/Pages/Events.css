@@ -76,17 +76,17 @@
 
 .splide__arrow{
     color:rgb(7, 9, 9);
-    background: transparent !important;
+    background: rgba(53, 43, 43, 0) !important;
     border-color: transparent !important;
 }
 .splide__arrow--prev{
-    left: 50px;
-    top:80%;
+    left: 40px;
+    top:60%;
     color: rgb(240, 248, 255);
 }
 .splide__arrow--next{
-    right: 50px;
-    top:80%;
+    right: 60px;
+    top:60%;
 }
 .splide__pagination{
     background-color: rgba(255, 255, 255, 0);
@@ -166,8 +166,9 @@
         background-color: black;
     }
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width:750px) {
     .eventInfo{
         height: 230px;
     }
 }
+
