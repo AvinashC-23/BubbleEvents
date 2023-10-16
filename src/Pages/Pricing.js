@@ -3,15 +3,25 @@ import "./pricing.css"
 function Pricing() {
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const formData = new FormData(event.target);
-
+    
+    const { name, email, message } = event.target.elements;
+  
+    const data = {
+      name: name.value,
+      email: email.value,
+      message: message.value,
+      'form-name': 'contact', // This should match the form name
+    };
+  
     try {
       await fetch("/", {
         method: "POST",
-        body: formData,
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: Object.keys(data)
+          .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+          .join("&"),
       });
-
+  
       alert("Form submitted successfully!");
     } catch (error) {
       alert("Error submitting form!");
