@@ -22,7 +22,7 @@ function Pricing() {
     <section className='pricingSection' id="pricing">
         <h1 className='blackHeading'>Get the best prices in Bangalore</h1>
         <button className='button-36'><a href='https://api.whatsapp.com/send?phone=919916050428&text=Hello!'>GET QUOTE</a></button>
-        <form name="contact" method="post" onSubmit={handleSubmit}>
+      <form name="contact" method="post" action="/" onSubmit={handleSubmit}>
       <input type="hidden" name="form-name" value="contact" />
       <p>
         <label htmlFor="name">Name</label> <br />
