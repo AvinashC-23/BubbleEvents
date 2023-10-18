@@ -39,10 +39,7 @@ function Home() {
     setExpanded(!expanded);
   }
 
-  const handleOptionClick = (option) => {
-    console.log(`Option ${option} clicked`);
-    setExpanded(false);
-  }
+  
 
   useEffect(() => {
     const handleClickOutside = (event) => {
