@@ -41,18 +41,26 @@ function Footer() {
         <div className='call'>
           <ul className='footerUL'>
             <li className='footerLogo'><span class="material-symbols-outlined ">
-call
-</span></li>
-            <li className='footerLi'><a href='tel:9916050428'>+91 99160 50428</a></li>
+              call
+            </span></li>
+            <li className='footerLi'><a href='tel:9019673729'>+91 90196 73729</a></li>
             <li className='footerLi'><a href='tel:9945507093'>+91 99455 07093</a></li>
           </ul>
         </div>
         <div className='mail'>
           <ul className='footerUL'>
             <li className='footerLogo'><span class="material-symbols-outlined">
-mail
-</span></li>
+              mail
+            </span></li>
             <li className='footerLi'><a href="mailto:support@bubbleevents.in">support@bubbleevents.in</a></li>
+          </ul>
+        </div>
+        <div className='address'>
+          <ul className='footerUL'>
+            <li className='footerLogo'><span class="material-symbols-outlined">
+              location_on
+            </span></li>
+            <li className='footerLi'><a href="mailto:support@bubbleevents.in">No.387, 3rd Floor, 9th Main Road, Sector 7,<br/> HSR Layout, Bengaluru- 560 102</a></li>
           </ul>
         </div>
       </div>
