@@ -194,7 +194,7 @@ function Photobooths() {
       <div className='includedWindows'>
       <ul className='includedList'>
       {includedData.map((item, index) => (
-        <li>
+        <li key={item.id}>
           <div
             className="eventContainer"
             onMouseEnter={() => handleHover(index)}
