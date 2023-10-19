@@ -188,7 +188,7 @@ function Pricing() {
               </select>
             </p>
             <p>
-              <textarea id="message" name="message" required placeholder='Message' value={formData.message} onChange={handleChange}></textarea>
+              <textarea id="message" name="message" placeholder='Message (optional)' value={formData.message} onChange={handleChange}></textarea>
             </p>
             <p>
               <button type="submit" className='button-34'>Submit</button>
