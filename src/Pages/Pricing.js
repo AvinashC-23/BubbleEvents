@@ -88,28 +88,39 @@
 // export default Pricing
 
 import React, { useState } from 'react';
-import "./pricing.css";
-import Logo from "./logo.png";
-import WhatsApp from "../Components/whatsapp.png";
+import "./pricing.css"
+import Logo from "./logo.png"
+import WhatsApp from "../Components/whatsapp.png"
 
 function Pricing() {
   const [formData, setFormData] = useState({
-    name: "",
-    phoneNumber: "",
-    email: "",
-    message: "",
-    options: "option1" // Set a default value if needed
+    name: '',
+    phoneNumber: '',
+    email: '',
+    message: '',
+    options: 'option1'
   });
 
   const handleSubmit = async (event) => {
     event.preventDefault();
 
+    const { name, phoneNumber, email, message, options } = event.target.elements;
+
+    const data = {
+      name: name.value,
+      phoneNumber: phoneNumber.value,
+      email: email.value,
+      message: message.value,
+      options: options.value,
+      'form-name': 'contact',
+    };
+
     try {
       await fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: Object.keys(formData)
-          .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(formData[key]))
+        body: Object.keys(data)
+          .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
           .join("&"),
       });
 
@@ -117,42 +128,43 @@ function Pricing() {
 
       // Clear form fields after submission
       setFormData({
-        name: "",
-        phoneNumber: "",
-        email: "",
-        message: "",
-        options: "option1" // Reset to default value if needed
+        name: '',
+        phoneNumber: '',
+        email: '',
+        message: '',
+        options: 'option1'
       });
+
     } catch (error) {
       alert("Error submitting form!");
     }
   };
 
-  const handleChange = (event) => {
-    const { name, value } = event.target;
+  const visitLink = () => {
+    window.open('https://wa.link/bs4mdp', '_blank');
+  }
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
     setFormData({
       ...formData,
       [name]: value
     });
-  };
-
-  const visitLink = () => {
-    window.open('https://wa.link/bs4mdp', '_blank');
-  };
+  }
 
   return (
     <section className='pricingSection' id="pricing">
       <h1 className='priceHeading'>Get the best prices in Bangalore</h1>
 
       <div className='button-34' onClick={visitLink}>
-        <span>Text Us <img src={WhatsApp} className='buttonIcon' alt="WhatsApp" /></span>
+        <span>Text Us <img src={WhatsApp} className='buttonIcon' alt="WhatsApp"></img></span>
       </div>
 
       <h1 className='priceHeading mobileSection'>or request a callback</h1>
 
       <div className='enquiryForm'>
         <div className='logoHolder'>
-          <img src={Logo} alt="Bubble" className='formLogo' />
+          <img src={Logo} alt="Bubble" className='formLogo'></img>
         </div>
 
         <div className='formHolder'>
@@ -166,7 +178,7 @@ function Pricing() {
               <input type="tel" id="phoneNumber" name="phoneNumber" required placeholder="Phone Number" value={formData.phoneNumber} onChange={handleChange} />
             </p>
             <p>
-              <input type="email" id="email" name="email" placeholder="E-Mail" value={formData.email} onChange={handleChange} />
+              <input type="email" id="email" name="email" required placeholder="E-Mail" value={formData.email} onChange={handleChange} />
             </p>
             <p>
               <select id="options" name="options" value={formData.options} onChange={handleChange}>
@@ -176,16 +188,19 @@ function Pricing() {
               </select>
             </p>
             <p>
-              <textarea id="message" name="message"  placeholder='Message' value={formData.message} onChange={handleChange}></textarea>
+              <textarea id="message" name="message" required placeholder='Message' value={formData.message} onChange={handleChange}></textarea>
             </p>
             <p>
               <button type="submit" className='button-34'>Submit</button>
             </p>
+
           </form>
         </div>
       </div>
+
     </section>
-  );
+  )
 }
 
 export default Pricing;
+
