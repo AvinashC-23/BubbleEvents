@@ -1,13 +1,12 @@
 .logo{
-
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.5rem;
     /* font-size: 1.3rem; */
     height: 100%;
     padding:0;
+    padding-top: 5px;
     text-decoration: none;
-    margin-left: 80px;
-    margin-top: -45px;
+    z-index: 1;
     @supports (background-clip: text) or (-webkit-background-clip: text) {
         background-image: url("grad.png");
         background-size: 110% auto;
@@ -22,22 +21,23 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
+    height: 60px;
     width: 100%;
     position: fixed;
     z-index: 1;
-    padding: 0px 0px;
+    padding: 0px 80px 0 80px;
+    text-align: center;
 }
 .navigation-bar-white{
     background: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
+    height: 60px;
     width: 100%;
     position: fixed;
     z-index: 1;
-    padding: 0px 0px;
+    padding: 0px 80px 0 80px
 }
 .navigation-menu, .closed-navigation-menu{
     display: flex;
@@ -66,21 +66,13 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     text-decoration: none;
-    padding: 0 20px;
+    /* padding: 0 20px ; */
+    padding-left: 30px;
 }
 .navigation-link:hover{
     color: #189AB4;
     transition: 0.5s ease;
 }
-/* .navigation-link:hover::after{
-    content:"";
-    width: 10%;
-    height:2px;
-    background: #189AB4;
-    position: absolute;
-    bottom: -4px;
-    left: 20px;
-} */
 .smaller-screen{
     display: none;
 }
@@ -95,46 +87,20 @@
       }
     font-size: 1.4rem;
 }
-/* @media screen and (max-width:600px){
-    .logo {
-        align-items: center;
-        font-family: 'Bebas Neue', sans-serif;
 
-
-        height: 80px;
-        padding-top:20px;
-        text-decoration: none;
-        margin-left: 80px;
-        margin-top: -50px;
-
-        @supports (background-clip: text) or (-webkit-background-clip: text) {
-            background-image: url("grad.png");
-            background-size: 110% auto;
-            background-position: center;
-            color: transparent;
-            -webkit-background-clip: text;
-            background-clip: text;
-          }
-    }
-    .logo h1{
-        font-size: 1.8rem;
-        margin-top: 10px;
-
-    }
-    .navigation-bar{
-        height: 55px;
-
-    }
-    .navigation-bar-white{
-        height: 50px;
-    }
-} */
 @media screen and (max-width:1135px){
     .logo{
         font-size: 1.2rem;
         padding-left: 0px;
-        margin-left: 20px;
-        padding-top: 20px;
+        margin: 0%;
+        margin-top: 0px;
+        padding-top: 8px;
+    }
+    .navigation-bar{
+    padding: 0px 30px 0 30px
+    }
+    .navigation-bar-white{
+    padding: 0px 30px 0 30px
     }
     .navlist{
         display: flex;
@@ -146,14 +112,14 @@
         justify-content: flex-start;
         position: fixed;
         right: 0px;
-        top:90px;
+        top:60px;
         align-items: flex-start;
         width: 100%;
         height: 100%;
         background: rgb(255, 255, 255);
         /* background: linear-gradient(114deg, rgba(4,59,81,1) 0%, rgba(5,68,94,1) 100%);  */
         padding: 40px 0 0 10px;
-        margin-top: -11px;
+        /* margin-top: -11px; */
     }
     .closed-navigation-menu{
         display: flex;

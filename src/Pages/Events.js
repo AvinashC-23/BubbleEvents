@@ -40,7 +40,7 @@ function Events() {
 
   return (
     <section ref={sectionRef} className="eventPage" id="Events">
-      <animated.h1 style={fadeIn} class="heading360">We Under take</animated.h1>
+      <animated.h1 style={fadeIn} class="heading360">Our Services</animated.h1>
       {/* <h2>Relax and relish every moment of your event, knowing that we've got every detail covered. With Bubble Events, you can enjoy your special occasion without the stress of managing it. We're here to ensure everything runs seamlessly, leaving you free to make memories that last a lifetime.</h2> */}
       <Splide
             options={{

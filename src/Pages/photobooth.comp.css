@@ -5,7 +5,7 @@
     background: rgb(8,28,154);
     background: linear-gradient(103deg, rgba(8,28,154,0.1153054971988795) 15%, rgba(195,105,225,0.1012998949579832) 70%);
     color: white;
-    padding: 10px;
+    padding: 30px 0 80px 0;
     padding-top: 30px;
 
 }
@@ -23,6 +23,7 @@
         background-clip: text;
       }
     font-weight: 300;
+    margin-top: 40px;
 }
 .photoBoothContainer{
     width: 380px;
@@ -31,22 +32,15 @@
     text-align: center;
     justify-content: center;
     margin: 0 10px 30px 10px;
-    /* padding: 2px; */
     align-items: center;
     border-radius: 10px;
     background-size: cover;
-    /* background-color: rgba(255, 255, 255, 0); */
 }
 .innerContainer{
     width: 100%;
     height: 100%;
     padding: 20px;
-    /* border-radius: 10px; */
     color: rgb(5, 5, 5);
-    /* border-bottom: 1px solid #7f69e14f ;
-    border-right: 1px solid #8569e14f; */
-    /* background-image: linear-gradient(rgba(61, 123, 189, 0.5), rgba(131, 125, 125, 0.5)), url("https://wallpapercave.com/wp/wp8520270.jpg"); */
-    /* background-size: cover; */
     backdrop-filter: blur(1px) saturate(200%);
     -webkit-backdrop-filter: blur(1px) saturate(200%);
     background-color: rgba(255, 255, 255, 0.33);
@@ -103,7 +97,7 @@
 .eventContainer{
     border-radius: 12px;
     /* padding: 10px; */
-    margin-top: 2%;
+    margin-top: 8%;
     margin-bottom: 10px;
     width:300px;
     height: 320px;
@@ -152,6 +146,7 @@
 }
 .titleLine{
     height:40%;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;

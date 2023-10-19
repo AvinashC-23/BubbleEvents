@@ -29,11 +29,11 @@ function Navbar() {
     <>
     <div className={scrolled?"navigation-bar-white":'navigation-bar'}>
         <Router>
-        <div className='logo'>
+
             <Link to="#Home" className='logo' smooth>
                 <h1>BUBBLE EVENTS</h1>
             </Link>            
-        </div>
+            
         <div className={isMenuOpen?'navigation-menu':"closed-navigation-menu"}>
             <ul className="navlist">
             <li>
@@ -58,7 +58,7 @@ function Navbar() {
             </li>
             <li>
                 <Link to="#contact-us" smooth={true} className='navigation-link' onClick={()=>{setIsMenuOpen(!isMenuOpen)}}>
-                     Contact-Us
+                     ContactUs
                 </Link>
             </li>
             </ul>

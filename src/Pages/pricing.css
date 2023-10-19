@@ -46,7 +46,7 @@
   word-break: break-word;
   border: 0;
   height: 40px;
-  width:150px;
+  width:auto;
   font-size: 1.2em;
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 30px;
@@ -76,11 +76,11 @@
 }
 .enquiryForm{
     margin-top: 30px;
-   background-image: url(wickedbackground.png);
+    background-image: url(wickedbackground.png);
     border-radius: 25px;
     border: 1px solid rgba(255, 255, 255, 0.125);
     height: 600px;
-    width:900px;
+    width:1000px;
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
@@ -113,17 +113,18 @@
     background-color: rgba(17, 25, 40, 0.4);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
-    width: 90%;
+    width: 95%;
     height: 400px;
-    align-items: center;
-    padding:15% 20px 15% 20px;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 3fr 2fr;
+    /* align-items: center; */
+    padding:30px 10% 10px 10%;
+    display: flex;
+    /* grid-gap: 20px; */
+    /* grid-template-columns: 3fr 2fr; */
     flex-direction: column;
-    grid-row-gap: 20px ;
+    grid-row-gap: 05px ;
     border: 1px solid rgba(255, 255, 255, 0.185);
     border-radius: 5px;
+    margin: 0%;
 }
 .details input{
     font-size: 1.2em;
@@ -141,15 +142,14 @@
     padding: 20px;  
     color:white;
 }
-input::placeholder , textarea::placeholder{
-    /* font-size: 1.3em; */
-    color: white;
+input::placeholder , textarea::placeholder, select{
+    color: rgba(255, 255, 255, 0.662);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 .details textarea{
     grid-column-start: 1;
     grid-column-end: 2;
-    margin: 10px 0; 
+    margin: 0px ; 
     color:white;
     backdrop-filter: blur(7px) saturate(180%);
     -webkit-backdrop-filter: blur(7px) saturate(180%);
@@ -161,10 +161,12 @@ input::placeholder , textarea::placeholder{
     padding: 10px; 
     border-radius: 12px;
     width: 100%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
 }
 .details select {
-    font-size: 1.1em;
-    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.662);
     background-color: #ec17177d;
     border: none;
     backdrop-filter: blur(16px) saturate(180%);
@@ -174,21 +176,29 @@ input::placeholder , textarea::placeholder{
     border: 1px solid rgba(255, 255, 255, 0.125);
     border-radius: 12px;
     border: 1px solid rgba(209, 213, 219, 0.3);
-    padding-left: 1%;
+    padding-left: 15px;
     height: 40px;
     width: 100%;
     white-space: 20px;
   }
-
+  select {
+    /* -webkit-appearance: none; */
+    /* -moz-appearance: none; */
+    /* appearance: none; */
+    /* background-image: url('custom-arrow.png');  */
+    background-position: right 10px center;
+    /* background-repeat: no-repeat; */
+    padding-right: 100px; 
+  }
   @media screen and (min-width:600px){
     .pricingSection h1{
         text-align: left;
   }
   .button-36{
-        width: 200px;
+        width: auto;
   }
   }
-  @media screen and (max-width:900px){
+  @media screen and (max-width:1000px){
     .pricingSection{
         height: fit-content;
         padding: 30px 0 30px 0;

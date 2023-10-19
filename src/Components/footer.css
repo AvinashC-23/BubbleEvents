@@ -1,7 +1,10 @@
 .contactus {
-  /* background: rgba(183, 136, 228, 0.527); */
-  background: rgb(0, 0, 0);
-  /* background: linear-gradient(128deg, rgba(8,28,154,0.7931766456582633) 15%, rgba(192,66,235,0.779171043417367) 70%); */
+  background: url(grad.png);
+  backdrop-filter: blur(25px) saturate(65%);
+  -webkit-backdrop-filter: blur(25px) saturate(65%);
+  background-color: rgba(17, 25, 40, 0.85);
+  /* border-radius: 12px; */
+  border: 1px solid rgba(255, 255, 255, 0.125);
   color: white;
   height:fit-content;
   padding-top: 20px;
