@@ -1,5 +1,5 @@
 .contactus {
-  background: url(grad.png);
+  background: url(../Pages/grad.png);
   backdrop-filter: blur(25px) saturate(65%);
   -webkit-backdrop-filter: blur(25px) saturate(65%);
   background-color: rgba(17, 25, 40, 0.85);

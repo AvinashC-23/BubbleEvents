@@ -178,13 +178,13 @@ function Pricing() {
               <input type="tel" id="phoneNumber" name="phoneNumber" required placeholder="Phone Number" value={formData.phoneNumber} onChange={handleChange} />
             </p>
             <p>
-              <input type="email" id="email" name="email" required placeholder="E-Mail" value={formData.email} onChange={handleChange} />
+              <input type="email" id="email" name="email" required placeholder="E-Mail (optional)m" value={formData.email} onChange={handleChange} />
             </p>
             <p>
               <select id="options" name="options" value={formData.options} onChange={handleChange}>
-                <option value="option1">Event Management</option>
-                <option value="option2">PhotoBooth</option>
-                <option value="option3">Car Surprise Decor</option>
+                <option value="Event Management">Event Management</option>
+                <option value="PhotoBooth">PhotoBooth</option>
+                <option value="Car Decor">Car Surprise Decor</option>
               </select>
             </p>
             <p>

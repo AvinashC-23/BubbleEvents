@@ -8,7 +8,7 @@
     text-decoration: none;
     z-index: 1;
     @supports (background-clip: text) or (-webkit-background-clip: text) {
-        background-image: url("grad.png");
+        background-image: url("../Pages/grad.png");
         background-size: 110% auto;
         background-position: center;
         color: transparent;
@@ -25,7 +25,7 @@
     width: 100%;
     position: fixed;
     z-index: 1;
-    padding: 0px 80px 0 80px;
+    padding: 0px 90px 0 80px;
     text-align: center;
 }
 .navigation-bar-white{
@@ -55,7 +55,7 @@
 .navigation-link{
 
     @supports (background-clip: text) or (-webkit-background-clip: text) {
-        background-image: url("grad.png");
+        background-image: url("../Pages/grad.png");
         background-size: 110% auto;
         background-position: center;
         color: transparent;
@@ -78,7 +78,7 @@
 }
 .menu-icon{
     @supports (background-clip: text) or (-webkit-background-clip: text) {
-        background-image: url("grad.png");
+        background-image: url("../Pages/grad.png");
         background-size: 110% auto;
         background-position: center;
         color: transparent;
@@ -149,7 +149,7 @@
     }
     .smaller-screen{
         display: block;
-        padding-right: 15px;
+        padding-right: 0;
     }
 }
 @media screen and (max-width:1135px) and (min-width:600px){
@@ -174,21 +174,13 @@
     display:hidden;
 }
 }
-/* @media screen and (max-height:410px){
-    .navlist{
-        padding-top: 10%;
-        margin-top: 0;
-
+@media screen and (max-width:360px) {
+    .navigation-bar{
+        padding-left: 5px;
+        padding-right: 2px;
     }
-    .smaller-screen{
-        margin-top: 20px;
+    .logo{
+        font-size: 16px;
     }
-    .navigation-menu{
-        height: 410px;
-        scroll-behavior: smooth;
-        top: 20px;
-    }
-    .navigation-link{
-        margin-bottom: 10px;
-    }
-} */
+    
+}

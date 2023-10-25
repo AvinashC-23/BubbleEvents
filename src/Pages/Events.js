@@ -50,6 +50,9 @@ function Events() {
             drag: "fixed",
             gap: "0rem",
             pagination: false,
+            autoplay:true,
+            interval:3000,
+            type:"fade"
             }}>
                 {EventDetails.map((event)=>(
                     <SplideSlide key={event.id}>
