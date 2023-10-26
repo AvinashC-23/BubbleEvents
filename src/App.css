@@ -7,4 +7,18 @@
 ::-webkit-scrollbar {
     display: none;
 }
-
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../src/resources\ /Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../src/resources\ /Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
+  

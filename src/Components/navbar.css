@@ -51,9 +51,10 @@
     flex-direction: row;
     list-style:none;
 }
-
+.navMenuIcon{
+    fill: blue
+}
 .navigation-link{
-
     @supports (background-clip: text) or (-webkit-background-clip: text) {
         background-image: url("../Pages/grad.png");
         background-size: 110% auto;

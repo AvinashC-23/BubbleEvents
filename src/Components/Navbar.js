@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import "./navbar.css"
-// import Home from '../Pages/Home';
 import { BrowserRouter as Router } from 'react-router-dom'
 import { HashLink as Link} from 'react-router-hash-link';
+import CloseIcon from "./closeicon.svg"
+import MenuIcon from "./menuicon.svg"
 function Navbar() {
     let [isMenuOpen, setIsMenuOpen]=useState(window.innerWidth>700?true:false);
     window.addEventListener("resize", ()=>{setIsMenuOpen(false)})
@@ -65,15 +66,10 @@ function Navbar() {
         </div>
         
         <div className='smaller-screen'>
-            {/* <i className={isMenuOpen? "fa-solid fa-circle-xmark menu-icon": "fa-solid fa-bars menu-icon" }onClick={()=>{setIsMenuOpen(!isMenuOpen)}}></i> */}
             {isMenuOpen ? (
-            <span class="material-symbols-outlined menu-icon" onClick={() => {setIsMenuOpen(false)}}>
-            close
-            </span>
+            <img className="navMenuIcon" src={CloseIcon} alt="close" onClick={() => {setIsMenuOpen(false)}}/>     
             ) : (
-            <span class="material-symbols-outlined menu-icon" onClick={() => {setIsMenuOpen(true)}}>
-            menu
-            </span>
+            <img className="navMenuIcon" src={MenuIcon} alt="close" onClick={() => {setIsMenuOpen(true)}}/>
             )}
         </div>
         </Router>
